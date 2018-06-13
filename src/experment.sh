@@ -1,0 +1,10 @@
+/usr/bin/time -v -o ./suffixtree_space.txt -a ./index -z 8 -o ./suffixtree_time.txt -t ../data/125k.in
+/usr/bin/time -v -o ./suffixtree_space.txt -a ./index -z 8 -o ./suffixtree_time.txt -t ../data/250k.in
+/usr/bin/time -v -o ./suffixtree_space.txt -a ./index -z 8 -o ./suffixtree_time.txt -t ../data/500k.in
+/usr/bin/time -v -o ./suffixtree_space.txt -a ./index -z 8 -o ./suffixtree_time.txt -t ../data/1000k.in
+/usr/bin/time -v -o ./suffixtree_space.txt -a ./index -z 8 -o ./suffixtree_time.txt -t ../data/1500k.in
+/usr/bin/time -v -o ./suffixtree_space.txt -a ./index -z 8 -o ./suffixtree_time.txt -t ../data/2000k.in
+/usr/bin/time -v -o ./suffixtree_space.txt -a ./index -z 8 -o ./suffixtree_time.txt -t ../data/2500k.in
+/usr/bin/time -v -o ./suffixtree_space.txt -a ./index -z 8 -o ./suffixtree_time.txt -t ../data/3000k.in
+/usr/bin/time -v -o ./suffixtree_space.txt -a ./index -z 8 -o ./suffixtree_time.txt -t ../data/3500k.in
+/usr/bin/time -v -o ./suffixtree_space.txt -a ./index -z 8 -o ./suffixtree_time.txt -t ../data/4000k.in

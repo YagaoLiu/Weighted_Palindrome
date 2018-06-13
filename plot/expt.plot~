@@ -1,0 +1,18 @@
+set terminal postscript eps solid font "Times-Roman,25"
+set xlabel "String Length [MB]" center font "Times-Roman,25"
+set ylabel "Time [ms]" font "Times-Roman,25"
+set xrange [0:49]
+set xtics 4
+set yrange [0:211000]
+set output "time.eps"
+set key inside t l Left
+f(x) = a*x + b
+g(x) = c*x*log(x)*log(x) + d
+fit f(x) "time_rank.dat" using 1:2 via a,b
+fit g(x) "time_rank.dat" using 1:2 via c,d
+plot "time_rank.dat" using 1:2 w lp pt 13 ps 2 lw 2 lc 1 title "psa_rank",\
+	f(x) ls 7 lw 2 lc 3 title "linear fit curve",\
+	"time_unionfind.dat" using 1:2 w lp pt 13 ps 2 lw 2 lc 2 title "psa_union-find"
+
+
+

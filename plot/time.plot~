@@ -1,0 +1,14 @@
+set terminal postscript eps solid font "Times-Roman,25"
+set xlabel "String Length [KB]" center font "Times-Roman,25"
+set ylabel "Time [ms]" font "Times-Roman,25"
+set xrange [0:4100]
+set xtics 500
+set yrange [0:150000]
+set output "text_time.eps"
+set key inside t l Left
+plot   "text.dat" using 1:2 w lp pt 7 ps 2 lw 2 lc 1 notitle 
+
+
+
+
+
