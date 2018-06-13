@@ -1,4 +1,4 @@
-Weighted Index: Suffix Array Version
+Weighted Index Application: Palindromes
 ===
 
 <b>Pre-installation Instructions:</b>
